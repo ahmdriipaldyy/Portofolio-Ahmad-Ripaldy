@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio Ahmad Ripaldy</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#tentang">Tentang</a></li>
+          <li><a href="#keahlian">Keahlian</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="hero">
+      <div>
+        <h1>Ahmad Ripaldy</h1>
+        <p>Mahasiswa Universitas Yatsi Madani</p>
+        <button>Hubungi Saya</button>
+      </div>
+    </section>
+    <section id="tentang">
+      <div>
+        <h2>Tentang Saya</h2>
+        <p>
+          Saya Ahmad Ripaldy, mahasiswa aktif Universitas Yatsi Madani dengan
+          keahlian di bidang IT. Saya berkomitmen untuk terus belajar dan
+          mengikuti trend terbaru dalam teknologi.
+        </p>
+      </div>
+    </section>
+    <section id="keahlian">
+      <div>
+        <h2>Keahlian</h2>
+        <ul>
+          <li>Microsoft Office</li>
+          <li>Desain Web</li>
+          <li>Pengembangan Web</li>
+        </ul>
+      </div>
+    </section>
+    <section id="kontak">
+      <div>
+        <h2>Kontak</h2>
+        <p>Hubungi saya melalui:</p>
+        <ul>
+          <li>
+            Email: <a href="mailto:ripal4563@gmail.com">ripal4563@gmail.com</a>
+          </li>
+          <li>
+            Instagram:
+            <a href="https://instagram.com/ahmdriipaldyy_">@ahmdriipaldyy_</a>
+          </li>
+          <li>WhatsApp: <a href="(link unavailable)">085775559768</a></li>
+        </ul>
+        <p>Rating: <span>4.5/5</span></p>
+      </div>
+    </section>
+    <footer>
+      <p>&copy; 2024 Ahmad Ripaldy. Semua hak cipta dilindungi.</p>
+      <p>Waktu Indonesia: <span id="waktu"></span></p>
+    </footer>
+    <script>
+      const waktu = document.getElementById("waktu");
+      const tanggal = new Date();
+      waktu.innerHTML = tanggal.toLocaleString("id-ID", {
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit",
+      });
+      setInterval(() => {
+        const tanggal = new Date();
+        waktu.innerHTML = tanggal.toLocaleString("id-ID", {
+          hour: "2-digit",
+          minute: "2-digit",
+          second: "2-digit",
+        });
+      }, 1000);
+    </script>
+  </body>
+</html>
